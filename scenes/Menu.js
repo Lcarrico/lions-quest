@@ -24,7 +24,6 @@ class Menu extends Phaser.Scene {
     });
 
     playButton.on("pointerup", ()=>{
-      console.log("pointerup works");
       this.scene.start("game");
     });
 

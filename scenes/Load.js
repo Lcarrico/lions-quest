@@ -14,6 +14,12 @@ class Load extends Phaser.Scene {
       frameWidth: 32
     });
 
+    this.load.spritesheet("player", "resources/sprites/tempPlayer.png",{
+      frameHeight: 64,
+      frameWidth: 64
+    });
+
+
     let loadingBar = this.add.graphics({
       fillStyle: {
         color: 0xffffff
