@@ -8,6 +8,8 @@ class Entity{
     this._x = x;
     this._y = y;
     this._scene = scene;
+    this._sprite_name = sprite_name;
+    this._sprite_frame = sprite_frame;
     this._sprite = scene.add.sprite(x, y, sprite_name, sprite_frame);
   }
 
@@ -59,6 +61,14 @@ class Entity{
     return this._sprite;
   }
 
+  get sprite_name(){
+    return this._sprite_name;
+  }
+
+  get sprite_frame(){
+    return this._sprite_frame;
+  }
+
   set health(value){
     this._health = value;
   }
@@ -89,5 +99,13 @@ class Entity{
 
   set sprite(value){
     this._sprite = value;
+  }
+
+  set sprite_name(value){
+    this._sprite_name = value;
+  }
+
+  set sprite_frame(value){
+    this._sprite_frame = value;
   }
 }
